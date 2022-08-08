@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["ui-sans-serif", "system-ui"],
+            serif: ["ui-serif", "Georgia", "Montserrat"],
+            mono: ["ui-monospace", "SFMono-Regular"],
+            display: ["Oswald"],
+            body: ['"Open Sans"'],
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              green: "#029837",
+              navyblue: "#2b4353",
+              skyblue1: "#9cd3d3",
+              skyblue2: "#b6e1e0",
+              darkblue: "#000033",
+              grey: "#EEE7E1",
+              orange: "#e8630a",
+              brown: "#febe7e",
+              black1: "#393e46",
+              ash: "#9b9a99",
+              gray: "#808080"
+            },
+            borderRadius: {
+              none: "0",
+              sm: "0.125rem",
+              DEFAULT: "0.55rem",
+              DEFAULT: "4px",
+              md: "0.75rem",
+              lg: "1.25rem",
+              full: "9999px",
+              large: "12px",
+            },
+            fontSize: {
+              xs: ".75rem",
+              sm: ".875rem",
+              tiny: ".875rem",
+              base: "1rem",
+              lg: "1.125rem",
+              xl: "1.25rem",
+              "2xl": "1.5rem",
+              "3xl": "1.875rem",
+              "4xl": "2.25rem",
+              "5xl": "3rem",
+              "6xl": "4rem",
+              "7xl": "5rem",
+              "9xl": "7rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="./css/ionicons.min.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Oigoga Aba</title>
+  </head>
+
+  <body class="bg-grey dark:bg-navyblue dark:grey">
+    <header>
+      <div class="flex md:justify-center">
+        <nav class="">
+          <div class="lg:ml-24 mt-10">
+            <ul class="inline-flex flex-row">
+              <li class="mx-10 no-underline hover:underline">
+                <a href="https://twitter.com/oigoga_a">TWITTER</a>
+              </li>
+              <li class="mx-10 no-underline hover:underline">
+                <a href="https://github.com/oigoga">GITHUB</a>
+              </li>
+              <li class="mx-10 no-underline hover:underline">
+                <a href="https://www.linkedin.com/in/oigoga-aba-509aa117b/"
+                  >LINKEDIN</a
+                >
+              </li>
+              <li class="mx-10 no-underline hover:underline">
+                <a href="mailto:gogaelisabeth21@gmail.com">EMAIL</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="grid mx-3 my-28 lg:flex justify-around px-10">
+        <div class="mx-3 px-10 py-4 lg:w-1/3 md:pb-5 order-2">
+          <h1 class="text-black1 text-3xl">Hi I'm Goga</h1>
+          <p class="text-black1 font-serif mb-20 md:mb-5">
+            A front end Developer Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Maecenas porttitor congue massa. Fusce posuere,
+            magna sed pulvinar ultricies, purus lectus malesuada libero, sit
+            amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+            Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Proin
+            pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In
+            porttitor. Donec laoreet nonummy augue. Aliquam sodales enim odio, a
+            lacinia ante luctus placerat. Maecenas rhoncus eros quis purus
+            elementum consequat. Duis sit amet elit faucibus odio ornare luctus.
+            Duis iaculis ac magna vel hendrerit. Nulla turpis nulla, aliquet at
+            ipsum eget, dapibus dapibus est. Curabitur porta nibh elementum est
+            aliquet, sed lobortis libero ullamcorper. Nam sed diam nisi. Integer
+            tristique nisl nec purus blandit imperdiet. Aliquam accumsan mi a
+            consequat auctor. Cras tristique augue non dui bibendum, eu iaculis
+            quam fermentum. Mauris suscipit lorem rutrum ligula tincidunt
+            finibus. Donec mollis quam nibh, sit amet fringilla turpis sagittis
+            vel.
+          </p>
+          <div class="mb-2"> <button
+            class="bg-ash hover:bg-gray text-white font-bold py-2 px-4 my-2 mx-1 rounded-full"
+          >
+            HTML</button
+          ><button
+            class="bg-ash hover:bg-gray text-white font-bold py-2 my-2 mx-1 px-4 rounded-full"
+          >
+            CSS</button
+          ><button
+            class="bg-ash hover:bg-gray text-white font-bold py-2 my-2 mx-1 px-4 rounded-full"
+          >
+            JavaScript</button
+          ><button
+            class="bg-ash hover:bg-gray text-white  my-2 mx-1 font-bold py-2 px-4 rounded-full"
+          >
+            Tailwind CSS</button
+          ><button
+            class="bg-ash hover:bg-gray text-white my-2 mx-1 font-bold py-2 px-4 rounded-full"
+          >
+            Github
+          </button></div>
+         
+          <br />
+          <button
+            class="bg-gray hover:ash text-grey font-bold py-2 px-4 rounded w-full  inline-flex items-center"
+          >
+            <svg
+              class="fill-current w-4 h-4 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+            </svg>
+            <span> Download Resume </span>
+          </button>
+        </div>
+
+        <div class="w-2/3 -mt-8 lg:w-1/3 order-1 lg:order-2 lg:mr-28">
+          <img
+            src="./resources/me.jpg"
+            class="mb-4 h-68 w-full md:w-50 rounded shadow-md"
+            alt="My picture"
+          />
+        </div>
+      </div>
+    </header>
+    <footer>
+      <p class="flex justify-center font-thin mb-2 md:mb-4">
+        Copyright &copy; 2022 Aba Oigoga. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
+
+;
