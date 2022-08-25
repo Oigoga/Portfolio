@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;600&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Rubik+Dirt&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           fontFamily: {
-            sans: ["ui-sans-serif", "system-ui"],
-            serif: ["ui-serif", "Georgia", "Montserrat"],
-            mono: ["ui-monospace", "SFMono-Regular"],
-            display: ["Oswald"],
-            body: ['"Open Sans"'],
+            dancing_script:  ["'Dancing Script', 'cursive'"],
+            Lato: ["'Lato', 'sans-serif'"],
+            Dosis: ["'Dosis', 'sans-serif'"],
+            Rubik_dirt: ["'Rubik Dirt', 'cursive'"],
+            Great_vibes: ["'Great Vibes', 'cursive'"]
+            
+
           },
           extend: {
             colors: {
-              clifford: "#da373d",
-              green: "#029837",
-              navyblue: "#2b4353",
-              skyblue1: "#9cd3d3",
-              skyblue2: "#b6e1e0",
-              darkblue: "#000033",
-              grey: "#EEE7E1",
-              orange: "#e8630a",
-              brown: "#febe7e",
-              black1: "#393e46",
+                black:"#222831",
+                grey: "#393e46",
+                orange: "#f96d00", 
+                white:"#f2f2f2",
+              
             },
             borderRadius: {
               none: "0",
@@ -54,83 +61,62 @@
               "7xl": "5rem",
               "9xl": "7rem",
             },
+            backgroundImage: {
+              "hero-pattern": "url('./resources/hero_picture.jpg')",
+              "footer-texture": "url('/img/footer-texture.png')",
+            },
           },
         },
       };
     </script>
     <style type="text/tailwindcss"></style>
-    <link rel="stylesheet" href="./css/ionicons.min.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <title>Oigoga Aba</title>
+    <title>Goga's Portfolio</title>
   </head>
-
-  <body class="bg-grey dark:bg-navyblue dark:grey">
+  <body
+    class="bg-[url('./resources/hero_picture.jpg')] bg-cover bg-center h-screen text-white font-"
+  >
     <header>
-      <div class="flex md:justify-center  ">
-        <nav class="">
-          <div class="lg:ml-24 mt-10">
-            <ul class="inline-flex flex-row">
-              <li class="mx-10 no-underline hover:underline"><a href="https://twitter.com/oigoga_a">TWITTER</a></li>
-              <li class="mx-10 no-underline hover:underline"><a href="https://github.com/oigoga">GITHUB</a></li>
-              <li class="mx-10 no-underline hover:underline"><a href="https://www.linkedin.com/in/oigoga-aba-509aa117b/">LINKEDIN</a></li>
-              <li class="mx-10 no-underline hover:underline"><a href="mailto:gogaelisabeth21@gmail.com">EMAIL</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div class="grid mx-3 my-28 lg:flex justify-around px-10">
-        
-        <div class="mx-3  mt-32 lg:w-1/3 md:pb-5 sm:pb-5 order-1 lg:order-2">
-          <h1 class="text-black1 text-3xl">OIGOGA ABA</h1>
-          <p class="text-black1 font-serif mb-20 md:mb-10">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
-            porttitor congue massa Fusce posuere, magna sed pulvinar ultricies,
-            purus.
-          </p>
+        <div id="menu" class="container flex justify-between  bg-opacity-20 bg-transparent mx-auto items-center  ">
+            <div class="font-Great_vibes text-xl m-2">Goga</div>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </button>
+            <nav id="nav" class="fixed    bottom-0 -right-full top-12 w-full  md:w-auto bg-white text-black md:bg-transparent  md:text-white  md:static transition-all">
+                <ul class=" md:flex font-Lato">
+                    <li >
+                        <a href="index1.html" class="block p-5 text-3xl  hover:scale-125 active:underline">HI</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-5 text-3xl hover:scale-125 active:underline">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-5 text-3xl hover:scale-125 active:underline">WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block pl-5 pr-8 py-5 text-3xl hover:scale-125 active:underline">CONTACT</a>
+                    </li>
+                    
+                </ul>
+            </nav>
         </div>
-
-        <div class="w-2/3 -mt-8  lg:w-1/3 order-2 lg:mr-28 ">
-          <div class="font-serif">
-            <a href="./work.html"
-              ><h1
-                class="text-black1 text-5xl md:text-7xl lg:text-9xl font-bold transform transition duration-500 hover:scale-125 hover:bg-grey"
-              >
-                WORK
-              </h1></a
-            >
-            <a href="./about.html"
-              ><h1
-                class="text-black1 text-5xl md:text-7xl lg:text-9xl font-bold transform transition duration-500 hover:scale-125 hover:bg-grey"
-              >
-                ABOUT
-              </h1></a
-            >
-            <a href="./contact.html"
-              ><h1
-                class="text-black1 text-5xl md:text-7xl lg:text-9xl font-bold transform transition duration-500 hover:scale-125 hover:bg-grey"
-              >
-                CONTACT
-              </h1></a
-            >
-          </div>
-        </div>
-      </div>
+       
+       
+      
     </header>
-    <footer>
-      <p class="flex justify-center font-thin mb-2 md:mb-4"> Copyright &copy; 2022 Aba Oigoga. All rights reserved.</p>
-    </footer>
+    <section>
+      <div class="block text-center my-32">
+        <h1 class="text-7xl font-Rubik_dirt">Hi, I'm O'igoga!</h1>
+      <p class="text-2xl font-Lato">Lorem ipsum, dolor sit amet consectetur adipisicing elit.  <br>
+        officiis sit similique quibusdam architecto tempore ut quia, .</p>
+      </div>
+      <div>
+
+      </div>
+      
+    </section>
+    <script type="text/JavaScript" src="./script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
